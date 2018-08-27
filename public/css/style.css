@@ -1,0 +1,151 @@
+/*
+
+C+P fonts
+font-family: 'Work Sans', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+
+*/
+
+
+:root {
+    max-width: 100vw;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    background-color: #FCFCFC;
+}
+
+.grid {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-rows: 80px 1fr 120px;
+    grid-template-columns: minmax(30px, 1fr) minmax(0, 800px) minmax(30px, 1fr);
+
+    grid-template-areas:
+    "nav      nav     nav"
+    ".      content     ."
+    "footer footer footer";
+}
+
+.site-nav {
+    grid-area: nav;
+
+    /*box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    /*background-color: white;*/
+}
+
+@media (min-width: 768px) {
+    .site-nav {
+        flex-direction: row;
+    }
+}
+
+.nav-links {
+    text-align: center;
+
+    display: block;
+}
+
+.nav-links a {
+    padding: 10px;
+
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 18px;
+    color: black;
+
+}
+
+.brand a {
+    text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+
+    color:black;
+}
+
+.site-content {
+    grid-area: content;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.site-content h1,
+.site-content h2,
+.site-content h3 {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.site-content p,
+.site-content li {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.site-content blockquote p {
+    font-style: italic;
+    padding-left: 10px;
+
+    border-left: 1px solid black;
+}
+
+.site-content a {
+    color: black;
+}
+
+.site-footer {
+    grid-area: footer;
+
+    padding: 10px 30px;
+
+    background-color: #1E1E1E;
+    color: #FCFCFC;
+
+    display: flex;
+    align-items: center;
+
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.site-footer i {
+    padding: 5px;
+    color: #FCFCFC;
+}
+
+.news-list-view .header a {
+    font-family: 'Share Tech Mono', monospace;
+    color: black;
+}
+
+.news-list-view .header {
+    text-align: center;
+}
+
+.news-list-view .footer {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.news-list-view .teaser-text {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.news-list-view .news-list-date {
+    font-family: 'Work Sans', sans-serif;
+}

@@ -1,0 +1,7 @@
+plugin.tx_news.settings {
+    cropMaxCharacters = 9999
+    list.paginate {
+        itemsPerPage = 3
+        insertAbove = 0
+    }
+}

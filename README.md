@@ -1,8 +1,8 @@
 # p410n3-typo3-blog
 
-This is the code currently at use at https://blog.palone.top. It was done as an excerise, and because i didnt like the theme of my olld blog that much. So I made my own for TYPO3.
+This is the code currently at use at https://blog.palone.top. It was done as an excerise, and because i didnt like the theme of my old blog that much. So I made my own for TYPO3.
 
-I also wanted to start acrtually using CSS Grid. So I also did that.
+I also wanted to start actually using CSS Grid. So I also did that.
 
 ## Installation
 

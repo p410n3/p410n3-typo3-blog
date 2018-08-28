@@ -19,6 +19,8 @@ body {
     background-color: #FCFCFC;
 
     line-height: 1.4;
+
+    word-break: break-word;
 }
 
 .grid {
@@ -102,6 +104,7 @@ body {
     font-family: 'Share Tech Mono', monospace;
     font-size: 16px;
     background-color: #d8d8d8;
+    white-space: pre-line;
 
     padding: 20px;
 }

@@ -5,3 +5,5 @@ plugin.tx_news.settings {
         insertAbove = 0
     }
 }
+
+config.tx_realurl_enable = 1

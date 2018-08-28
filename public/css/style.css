@@ -98,6 +98,13 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+.site-content pre {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+    background-color: #d8d8d8;
+
+    padding: 20px;
+}
 
 .site-content blockquote p {
     font-style: italic;

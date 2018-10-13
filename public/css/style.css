@@ -120,6 +120,12 @@ body {
     color: black;
 }
 
+.site-content img {
+    max-width: 100%;
+    height: auto !important; /* To overwrite values from the HTML itself */
+    box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.7);
+}
+
 .site-footer {
     grid-area: footer;
 

@@ -29,7 +29,7 @@ body {
 
     display: grid;
 
-    grid-template-rows: 80px 1fr 120px;
+    grid-template-rows: 100px 1fr 120px;
     grid-template-columns: minmax(30px, 1fr) minmax(0, 800px) minmax(30px, 1fr);
 
     grid-template-areas:
@@ -46,7 +46,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     padding-left: 30px;
     padding-right: 30px;
@@ -63,11 +63,13 @@ body {
 .nav-links {
     text-align: center;
 
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
-    padding: 10px;
+    padding: 0 10px;
 
     font-family: 'Share Tech Mono', monospace;
     font-size: 18px;
@@ -132,7 +134,7 @@ body {
     padding: 10px 30px;
 
     background-color: #1E1E1E;
-    color: #FCFCFC;
+    color: #FCFCFC !important;
 
     display: flex;
     align-items: center;
@@ -140,7 +142,8 @@ body {
     font-family: 'Share Tech Mono', monospace;
 }
 
-.site-footer i {
+.site-footer i,
+.site-footer em {
     padding: 5px;
     color: #FCFCFC;
 }

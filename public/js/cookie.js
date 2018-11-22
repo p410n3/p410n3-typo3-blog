@@ -14,7 +14,7 @@ window.addEventListener("load", function(){
         },
         "position": "bottom-right",
         "content": {
-            "message": "This website uses cookies to ensure technical functionality.",
+            "message": "This website uses cookies to ensure functionality.",
             "link": "Privacy Policy",
             "href": "https://blog.palone.top/privacy/"
         }

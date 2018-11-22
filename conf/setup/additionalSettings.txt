@@ -20,10 +20,14 @@ plugin.tx_dp_cookieconsent._LOCAL_LANG {
     }
 }
 
-includeJSLibs {
-    cookie = //cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css
+page.includeCSS {
+    cookie = https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css
 }
 
-includeJSFooter {
+page.includeJSLibs {
+    cookie = https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js
+}
+
+page.includeJSFooter {
     cookie = fileadmin/p410n3/public/js/cookie.js
 }

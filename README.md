@@ -6,10 +6,11 @@ I also wanted to start actually using CSS Grid. So I also did that.
 
 ## Installation
 
-To install the theme include the TypoScript files:
+To install the theme include the main TypoScript files:
 
-    <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/p410n3/main.txt">
-    <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/p410n3/additionalSettings.txt">
+    <INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/p410n3/conf/setup/main.txt">
+    
+And also Install the tx_news plugin. The rest is optional
     
 I also suggest copying that Backend Layout: 
 

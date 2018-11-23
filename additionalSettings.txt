@@ -1,0 +1,11 @@
+plugin.tx_news.settings {
+    link.skipControllerAndAction = 1
+    cropMaxCharacters = 9999
+    list.paginate {
+        itemsPerPage = 3
+        insertAbove = 0
+    }
+}
+
+config.tx_realurl_enable = 1
+config.absRefPrefix = /

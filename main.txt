@@ -1,0 +1,91 @@
+page = PAGE
+page.typeNum = 0
+
+#META tags
+page.meta.viewport {
+    value {
+        1 = width=device-width, initial-scale=1
+    }
+}
+
+page.meta.description = Personal blog of p410n3. Contains posts about coding, hacking and everything else I might be interested in.
+
+#MENU
+lib.textmenu = COA
+lib.textmenu {
+
+     #add wrapper
+     wrap = <div class="site-nav">|</div>
+
+    10 = TEXT
+    10.value = p410n3 - Blog
+    10.wrap = <h1 class="brand"><a href="/" title="HOME">|</a></h1>
+
+    20 = HMENU
+    20 {
+       # We define the first level as text menu.
+       1 = TMENU
+
+       # Wrap
+       wrap = <div class="nav-links">|</div>
+    }
+}
+
+#Render Whole Site
+page.10 = COA
+page.10 {
+    wrap = <div class="grid">|</div>
+
+    #Render Menu
+    5 < lib.textmenu
+
+    # The CONTENT object executes a database query and loads the content.
+    10 = CONTENT
+    10.table = tt_content
+    10.wrap = <div class="site-content">|</div>
+    10.select {
+       orderBy = sorting
+       where = {#colPos}=1
+    }
+
+    20 = CONTENT
+    20.table = tt_content
+    20.wrap = <div class="site-footer">|</div>
+    20.select {
+       orderBy = sorting
+       where = {#colPos}=2
+    }
+    20.slide = -1
+}
+
+
+#Load css + JS
+page.includeCSS {
+    style = fileadmin/p410n3/public/css/style.css
+}
+
+page.includeCSSLibs {
+    fa = https://use.fontawesome.com/releases/v5.2.0/css/all.css
+    fonts = https://fonts.googleapis.com/css?family=Share+Tech+Mono|Work+Sans
+}
+
+#change news templates
+plugin.tx_news {
+        view {
+                templateRootPaths >
+                templateRootPaths {
+                        0 = EXT:news/Resources/Private/Templates/
+                        1 = fileadmin/p410n3/private/news/Templates/
+                }
+                partialRootPaths >
+                partialRootPaths {
+                        0 = EXT:news/Resources/Private/Partials/
+                        1 = fileadmin/p410n3/private/news/Partials/
+                }
+                layoutRootPaths >
+                layoutRootPaths {
+                        0 = EXT:news/Resources/Private/Layouts/
+                        1 = fileadmin/p410n3/private/news/Layouts/
+                }
+        }
+}

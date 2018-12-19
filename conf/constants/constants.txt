@@ -1,0 +1,10 @@
+#RSS feed
+plugin.tx_news.rss.channel {
+   title = p410n3 - blog
+   description = The blog of p410n3 aka palone.
+   link = https://blog.palone.top/
+   language = en-gb
+   copyright = nobody
+   category = tech
+   generator = TYPO3 EXT:news
+}

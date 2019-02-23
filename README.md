@@ -16,7 +16,7 @@ I also suggest copying that Backend Layout:
 
     mod.web_layout.BackendLayouts {
       exampleKey {
-        title = Example
+        title = p410n3-blog
         
         icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
         config {

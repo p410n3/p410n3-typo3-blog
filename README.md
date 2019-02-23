@@ -22,7 +22,7 @@ I also suggest copying that Backend Layout:
         config {
           backend_layout {
             colCount = 1
-            rowCount = 3
+            rowCount = 2
             rows {
               1 {
                 columns {
@@ -35,12 +35,9 @@ I also suggest copying that Backend Layout:
               }
               2 {
                 columns {
-                }
-              }
-              3 {
-                columns {
                   1 {
                     name = Footer
+		    rowspan = 2
                     colPos = 2
                   }
                 }

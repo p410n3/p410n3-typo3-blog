@@ -13,41 +13,39 @@ To install the theme include the main TypoScript files:
 And also Install the tx_news plugin. The rest is optional
     
 I also suggest copying that Backend Layout: 
-
-    mod.web_layout.BackendLayouts {
-      exampleKey {
-        title = p410n3-blog
-        
-        icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
-        config {
-          backend_layout {
-            colCount = 1
-            rowCount = 2
-            rows {
+````
+mod.web_layout.BackendLayouts {
+  exampleKey {
+    title = p410n3-blog
+    
+    icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 2
+        rows {
+          1 {
+            columns {
               1 {
-                columns {
-                  1 {
-                    name = Content
-                    rowspan = 2
-                    colPos = 1
-                  }
-                }
+                name = Content
+                colPos = 1
               }
-              2 {
-                columns {
-                  1 {
-                    name = Footer
-		    rowspan = 2
-                    colPos = 2
-                  }
-                }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Footer
+                colPos = 2
               }
             }
           }
         }
       }
     }
-
+  }
+}
+````
 ## What is that Design?
 
 I was inspired by that site: https://brutalist-web.design/

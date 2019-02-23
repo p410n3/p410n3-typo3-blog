@@ -9,8 +9,6 @@ plugin.tx_news.settings {
     }
 }
 
-config.tx_realurl_enable = 1
-config.absRefPrefix = /
 
 plugin.tx_dp_cookieconsent._LOCAL_LANG {
     en {

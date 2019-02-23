@@ -61,7 +61,7 @@ page.10 {
 
 #Load css + JS
 page.includeCSS {
-    style = fileadmin/p410n3/public/css/style.css
+    style = fileadmin/p410n3-typo3-blog/public/css/style.css
 }
 
 page.includeCSSLibs {
@@ -75,17 +75,17 @@ plugin.tx_news {
                 templateRootPaths >
                 templateRootPaths {
                         0 = EXT:news/Resources/Private/Templates/
-                        1 = fileadmin/p410n3/private/news/Templates/
+                        1 = fileadmin/p410n3-typo3-blog/private/news/Templates/
                 }
                 partialRootPaths >
                 partialRootPaths {
                         0 = EXT:news/Resources/Private/Partials/
-                        1 = fileadmin/p410n3/private/news/Partials/
+                        1 = fileadmin/p410n3-typo3-blog/private/news/Partials/
                 }
                 layoutRootPaths >
                 layoutRootPaths {
                         0 = EXT:news/Resources/Private/Layouts/
-                        1 = fileadmin/p410n3/private/news/Layouts/
+                        1 = fileadmin/p410n3-typo3-blog/private/news/Layouts/
                 }
         }
 }

@@ -152,7 +152,8 @@ body {
     color: #FCFCFC;
 }
 
-.news-list-view .header a {
+.news-list-view .header a,
+.news-backlink-wrap a {
     font-family: 'Share Tech Mono', monospace;
     color: black;
 }
@@ -167,10 +168,7 @@ body {
     padding: 0;
 }
 
-.news-list-view .teaser-text {
-    font-family: 'Work Sans', sans-serif;
-}
-
+.news-list-view .teaser-text,
 .news-list-view .news-list-date {
-    font-family: 'Work Sans', sans-serif;
+   font-family: 'Work Sans', sans-serif;
 }

@@ -1,6 +1,8 @@
 # p410n3-typo3-blog
 
-This is the code currently at use at https://blog.palone.top. It was done as an excerise, and because i didnt like the theme of my old blog that much. So I made my own for TYPO3.
+This is the code *previously* at use at https://blog.palone.top. It was done as an excerise, and because i didnt like the theme of my old blog that much. So I made my own for TYPO3.
+
+I have since switched to using the t3g/blog extension instead og the tx_news extension. It requires basically no setup. 
 
 I also wanted to start actually using CSS Grid. So I also did that.
 

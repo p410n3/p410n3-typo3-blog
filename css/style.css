@@ -1,0 +1,236 @@
+/*
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Work Sans', sans-serif;
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    font-family: 'Share Tech Mono', monospace;
+
+    line-height: 1.4;
+    
+    background-color: #fafbfc;
+    color: #24292e;
+
+    min-height: 100vh;
+    max-width: 100vw;
+
+    display: grid;
+    grid-template-areas: 
+        "nav"
+        "content"
+        "footer";
+    
+    grid-template-rows: 80px auto 120px;
+    grid-template-columns: 1fr;
+}
+
+a {
+    text-decoration: underline;
+    color: #24292e;
+}
+
+a:hover {
+    color: #24292e;
+}
+
+nav {
+    grid-area: nav;
+
+    padding: 15px 40px;
+
+    white-space: nowrap;
+    text-align: center;
+
+    flex-grow: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+nav * {
+    height: 100%;
+    max-width: 100vw;
+}
+
+nav h1  {
+    margin: 0;
+}
+
+
+nav h1 a {
+    margin: 0;
+
+    font-size: 2rem;
+
+    text-decoration: none;
+}
+
+nav a {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        justify-content: flex-end;
+    }
+}
+
+.nav-links a {
+    padding: 0 10px;
+    height: auto;
+}
+
+.content {
+    grid-area: content;
+
+    text-align: left;
+
+    max-width: 700px;
+
+    margin: 60px auto 40px auto;
+
+    padding: 0 15px;
+}
+
+.content .post {
+    margin-bottom: 70px;
+}
+
+.content .tx-blog-post-list {
+    text-align: center;
+}
+
+.content .post .entry-meta {
+    text-align: left;
+}
+
+.content .post .label-category {
+    padding-right: 5px;
+}
+
+.content .post .label-category {
+    margin-right: 5px;
+}
+
+.content .pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content .pagination li {
+    padding: 0 5px;
+}
+
+.content .pagination li.active a {
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.content .page-title {
+    font-size: 1.5rem;
+}
+
+.content .post .read-more {
+    text-align: left;
+    margin: 15px 0;
+}
+
+.content pre {
+    padding: 10px 20px;
+    background-color: lightgray;
+}
+
+.content blockquote {
+    padding: 0 20px;
+    background-color: lightgray;
+}
+
+.content blockquote:before {
+    content: '"';
+    font-size: 2rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.content blockquote:after {
+    content: '"';
+    font-size: 2rem;
+    font-family: 'Work Sans', sans-serif;
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content blockquote p {
+    margin: 0;
+}
+
+.content img {
+    max-width: 100%;
+    height: 100%;
+
+    margin: 20px 0;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Set fonts */
+.content p,
+.content li {
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+    list-style: none;
+}
+
+footer {
+    grid-area: footer;
+
+    padding: 15px 40px;
+
+    background-color: #24292e;
+    color: #fafbfc;
+
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-links {
+    margin: 0;
+}
+
+footer .footer-links a {
+    text-decoration: none;
+    text-align: center;
+    color: #fafbfc;
+}
+
+footer .footer-links a:hover {
+    color: #fafbfc;
+}

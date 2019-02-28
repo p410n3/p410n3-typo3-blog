@@ -1,0 +1,87 @@
+# DEBUG
+# config.contentObjectExceptionHandler = 0
+
+# init
+page = PAGE
+
+# Site wide template
+page.10 = FLUIDTEMPLATE
+page.10 {
+   templateName = Default
+   templateName.value = Default
+
+   templateRootPaths {
+        0 = blog/main/template/
+    }
+}
+
+plugin.tx_blog.settings.sharing.enabled = 0
+
+#META tags
+page.meta.viewport {
+    value {
+        1 = width=device-width, initial-scale=1
+    }
+}
+
+prssage.meta.description = Personal blog of p410n3. Contains posts about coding, hacking and everything else I might be interested in.
+
+#MENU
+lib.textmenu = HMENU
+lib.textmenu {
+    # We define the first level as text menu.
+    excludeUidList = 3,4,5,6
+    1 = TMENU
+}
+
+# CONTENT
+lib.content = COA
+lib.content {
+    10 = CONTENT
+    10.table = tt_content
+    10.select {
+       orderBy = sorting
+       where = {#colPos}=0
+    }
+}
+
+#FOOTER
+lib.footer = COA
+lib.footer {
+    10 = CONTENT
+    10.table = tt_content
+    10.select {
+       orderBy = sorting
+       where = {#colPos}=1
+    }
+    10.slide = -1
+
+}
+
+page.includeCSS {
+    style = /blog/css/style.css
+}
+
+page.includeCSSLibs {
+    fa = https://use.fontawesome.com/releases/v5.2.0/css/all.css
+    fonts = https://fonts.googleapis.com/css?family=Share+Tech+Mono|Work+Sans
+}
+
+#WHOLE PAGE
+rss = PAGE 
+ rss { 
+     typeNum = 1337 
+     10 < tt_content.list.20.blog_posts 
+     10.format = rss 
+  
+     config { 
+         disableAllHeaderCode = 1 
+         additionalHeaders { 
+             10 { 
+                 header = Content-type: application/xml 
+             } 
+         } 
+         #xhtml_cleaning = 0 
+         admPanel = 0 
+     } 
+ }

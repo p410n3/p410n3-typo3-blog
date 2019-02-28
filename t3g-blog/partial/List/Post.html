@@ -1,0 +1,18 @@
+{namespace blog=T3G\AgencyPack\Blog\ViewHelpers}
+<div class="post">
+    <h2 itemprop="name"><blog:link.post post="{post}" /></h2>
+    <f:if condition="{post.abstract}">
+        <f:then>
+            <p itemprop="description">{post.abstract}</p>
+        </f:then>
+        <f:else>
+            <p itemprop="description">{post.description}</p>
+        </f:else>
+    </f:if>
+    <div class="read-more">
+        <blog:link.post post="{post}">
+            Read More
+        </blog:link.post>
+    </div>
+    <f:render partial="Post/Meta" arguments="{_all}" />
+</div>

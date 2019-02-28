@@ -1,0 +1,13 @@
+{namespace blog=T3G\AgencyPack\Blog\ViewHelpers}
+
+<div class="entry-meta">
+    <span class="entry-date">
+        <time class="entry-date published" datetime="{f:format.date(format: '%Y-%m-%dT%H:%M:%S-%z', date: post.publishDate)}" itemprop="datepublished">{f:format.date(format: '{settings.lists.posts.dateFormat}', date: post.publishDate)}</time>
+    </span>
+    <f:if condition="{post.categories}">
+        <span class="sep"> - </span>
+        <f:for each="{post.categories}" as="postCategory">
+            <blog:link.category category="{postCategory}" class="label label-default label-category" />
+        </f:for>
+    </f:if>
+</div>

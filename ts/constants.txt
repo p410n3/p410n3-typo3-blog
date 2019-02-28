@@ -1,0 +1,9 @@
+plugin {
+	tx_blog {
+      view {
+        templateRootPaths = blog/t3g-blog/template/
+        partialRootPaths = blog/t3g-blog/partial/
+        layoutRootPaths = blog/t3g-blog/layout/
+      }
+    }
+}

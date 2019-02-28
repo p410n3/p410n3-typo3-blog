@@ -1,5 +1,5 @@
 # p410n3-typo3-blog
-My blog. Recoded for TYPO3 as an excercise.
+My blog. Recoded for TYPO3 9 LTS as an excercise.
 
 ### TS
 ````

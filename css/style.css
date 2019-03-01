@@ -47,6 +47,8 @@ nav {
 
     flex-grow: 0;
 
+    max-width: 100vw;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -61,7 +63,6 @@ nav {
 
 nav * {
     height: 100%;
-    max-width: 100vw;
 }
 
 nav h1  {
@@ -106,7 +107,8 @@ nav a {
 
     text-align: left;
 
-    max-width: 700px;
+    width: 700px;
+    max-width: 100vw;
 
     margin: 60px auto 40px auto;
 
@@ -165,6 +167,8 @@ nav a {
 .content pre {
     padding: 10px 20px;
     background-color: lightgray;
+    white-space: pre-wrap;
+    word-break: break-all;
 }
 
 .content blockquote {
@@ -210,6 +214,8 @@ nav a {
 }
 
 footer {
+    max-width: 100vw;
+
     grid-area: footer;
 
     padding: 15px 40px;

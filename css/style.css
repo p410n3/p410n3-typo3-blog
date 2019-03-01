@@ -141,6 +141,7 @@ nav a {
 
 .content .pagination li {
     padding: 0 5px;
+    list-style: none;
 }
 
 .content .pagination li.active a {
@@ -222,7 +223,6 @@ nav a {
 .content li {
     text-align: left;
     font-family: 'Work Sans', sans-serif;
-    list-style: none;
 }
 
 footer {

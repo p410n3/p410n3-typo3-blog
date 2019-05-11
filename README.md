@@ -1,7 +1,11 @@
 # p410n3-typo3-blog
 My blog. Recoded for TYPO3 9 LTS as an excercise.
 
-### TS
+### Required Extenions
+
+https://typo3.org/extensions/repository/view/blog
+
+### TypoScript
 ````
 <INCLUDE_TYPOSCRIPT: source="FILE:blog/ts/typoscript.txt">
 ````

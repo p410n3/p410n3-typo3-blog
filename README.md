@@ -8,6 +8,7 @@ https://typo3.org/extensions/repository/view/blog
 ### TypoScript
 ````
 <INCLUDE_TYPOSCRIPT: source="FILE:blog/ts/typoscript.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:blog/ts/constants.txt">
 ````
 
 ### CONST

@@ -225,6 +225,10 @@ nav a {
     font-family: 'Work Sans', sans-serif;
 }
 
+.content .ce-uploads { 
+    word-break: break-word;
+}
+
 footer {
     max-width: 100vw;
 

@@ -62,10 +62,10 @@ page.includeCSS {
     style = /blog/css/style.css
 }
 
-page.includeCSSLibs {
-    fa = https://use.fontawesome.com/releases/v5.2.0/css/all.css
-    fonts = https://fonts.googleapis.com/css?family=Share+Tech+Mono|Work+Sans
-}
+#page.includeCSSLibs {
+#    fa = https://use.fontawesome.com/releases/v5.2.0/css/all.css
+#    fonts = https://fonts.googleapis.com/css?family=Share+Tech+Mono|Work+Sans
+#}
 
 #WHOLE PAGE
 rss = PAGE 

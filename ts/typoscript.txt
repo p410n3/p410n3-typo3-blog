@@ -60,7 +60,9 @@ lib.footer {
 
 page.includeCSS {
     style = /blog/css/style.css
+    fa = /blog/fontawesome/css/all.css
 }
+
 
 #page.includeCSSLibs {
 #    fa = https://use.fontawesome.com/releases/v5.2.0/css/all.css

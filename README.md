@@ -19,4 +19,7 @@ plugin.tx_blog.settings.lists.posts.maximumDisplayedItems = 0
 plugin.tx_blog.settings.lists.pagination.itemsPerPage = 3
 
 <INCLUDE_TYPOSCRIPT: source="FILE:blog/ts/constants.txt">
+
 ````
+
+### Fonts are hosted locally
